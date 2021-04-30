@@ -13,10 +13,8 @@ Category.init(
       autoIncrement: true,
     },
     category_name: {
-      type: DataType.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
     },
   },
   {
@@ -25,7 +23,7 @@ Category.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'category',
-  }
+  },
 );
 
 module.exports = Category;

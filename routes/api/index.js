@@ -1,10 +1,11 @@
 const router = require('express').Router();
-const categoryRoutes = require('./category-routes');
-const productRoutes = require('./product-routes');
-const tagRoutes = require('./tag-routes');
+const productRoutes = require('./productRoutes');
+const tagRoutes = require('./tagRoutes');
+const categoryRoutes = require('./categoryRoutes');
 
-router.use('/categories', categoryRoutes);
+// Prefix all routes defined in `bookRoutes.js` with `/books
 router.use('/products', productRoutes);
 router.use('/tags', tagRoutes);
+router.use('/category', categoryRoutes);
 
 module.exports = router;
